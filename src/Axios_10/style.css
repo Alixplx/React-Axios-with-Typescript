@@ -1,0 +1,190 @@
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    background: #f4f6fb;
+    color: #192238;
+}
+
+button, input, textarea {
+
+    font: inherit;
+}
+
+.page {
+
+    min-height: 100vh;
+    padding: 40px 16px;
+}
+
+.form-card {
+
+    width: min(100%, 620px);
+    margin: 0 auto;
+    padding: 32px;
+    border: 1px solid #e3e7f0;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 16px 45px rgb(25 34 56 / 6%);
+}
+
+.page-header {
+
+    margin-bottom: 28px;
+}
+
+.eyebrow {
+
+    color: #6254d9;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.page-header h1 {
+
+    margin: 8px 0;
+    font-size: clamp(28px, 5vw, 36px);
+}
+
+.page-header p:last-child {
+
+    color: #6c7589;
+    line-height: 1.6;
+}
+
+.field {
+
+    display: grid;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.field label {
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.field input, .field textarea {
+
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d9deea;
+    border-radius: 9px;
+    background: white;
+    color: #192238;
+    outline: none;
+}
+
+.field textarea {
+
+    resize: vertical;
+}
+
+.field input:focus, .field textarea:focus {
+
+    border-color: #6254d9;
+    box-shadow: 0 0 0 3px rgb(98 84 217 / 12%);
+}
+
+.field input[aria-invalid="true"], .field textarea[aria-invalid="true"] {
+
+    border-color: #d92d20;
+}
+
+.field input:disabled, .field textarea:disabled {
+
+    background: #f4f5f8;
+    cursor: not-allowed;
+}
+
+.field-error {
+
+    margin: 0;
+    color: #b42318;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.error-banner {
+
+    margin-bottom: 18px;
+    padding: 12px 14px;
+    border: 1px solid #fecdca;
+    border-radius: 9px;
+    background: #fef3f2;
+    color: #b42318;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.submit-button {
+
+    width: 100%;
+    padding: 13px 16px;
+    border: 0;
+    border-radius: 9px;
+    background: #6254d9;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 160ms ease;
+}
+
+.submit-button:hover:not(:disabled) {
+
+    background: #5142c3;
+}
+
+.submit-button:disabled {
+
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.success-card {
+
+    margin-top: 28px;
+    padding: 20px;
+    border: 1px solid #abefc6;
+    border-radius: 12px;
+    background: #ecfdf3;
+    overflow-wrap: anywhere;
+}
+
+.success-card h2 {
+
+    margin-top: 0;
+    color: #067647;
+    font-size: 20px;
+}
+
+.success-card p {
+
+    line-height: 1.6;
+}
+
+.demo-note {
+
+    color: #475467;
+    font-size: 12px;
+}
+
+@media (max-width: 520px) {
+
+    .page {
+
+        padding: 20px 12px;
+    }
+
+    .form-card {
+        
+        padding: 22px;
+    }
+}

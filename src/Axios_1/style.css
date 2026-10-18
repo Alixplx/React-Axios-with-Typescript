@@ -1,0 +1,100 @@
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+button, input {
+
+    font: inherit;
+}
+
+.app {
+
+    width: min(100% - 2rem, 1100px);
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+h1 {
+
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form {
+
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.form input {
+
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form button {
+
+    background: #222;
+    color: white;
+}
+
+.users {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.user-card {
+
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.user-card h2 {
+
+    margin-top: 0;
+}
+
+.user-card p {
+
+    color: #666;
+}
+
+.actions {
+
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.actions button {
+
+    background: #eee;
+}
+
+.actions button:last-child {
+
+    background: #ddd;
+}
